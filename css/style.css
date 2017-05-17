@@ -1,0 +1,81 @@
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  background-color: #1e1e1e; }
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -50px; }
+
+.page-wrap:after {
+  content: "";
+  display: block; }
+
+.site-footer, .page-wrap:after {
+  height: 50px; }
+
+.site-footer {
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap; }
+  .site-footer h1 {
+    margin-left: 2%;
+    color: rgba(255, 255, 255, 0.7); }
+  .site-footer a {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2%; }
+    .site-footer a:hover {
+      color: white; }
+  .site-footer .mail {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    text-decoration: none;
+    text-transfrom: uppercase;
+    margin-right: 2%; }
+    .site-footer .mail:hover {
+      color: white; }
+
+.background {
+  background: url("../img/OptimisGFN-2.jpg");
+  background-size: cover;
+  height: 95vh;
+  width: 100%; }
+
+.bandname {
+  font-size: 20pt; }
+
+@media screen and (max-width: 684px) {
+  .page-wrap {
+    min-height: 100%;
+    margin-bottom: -100px; }
+
+  .site-footer, .page-wrap:after {
+    height: 100px; }
+
+  .site-footer {
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .background {
+    height: 85vh; } }
+@media screen and (max-width: 450px) {
+  .background {
+    height: 100vh;
+    margin-bottom: -200px; }
+
+  .page-wrap {
+    min-height: 100%;
+    margin-bottom: -200px; }
+
+  .site-footer {
+    display: flex; }
+
+  .site-footer, .page-wrap:after {
+    height: 200px; } }
